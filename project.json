@@ -8,13 +8,14 @@
     "UiPath.Mail.Activities": "[1.10.5]",
     "UiPath.Salesforce.Activities": "1.7.0",
     "UiPath.System.Activities": "[21.4.1]",
+    "UiPath.Testing.Activities": "[1.3.3]",
     "UiPath.UIAutomation.Activities": "[21.4.4]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "19.10.1.0",
-  "projectVersion": "1.0.37",
+  "projectVersion": "1.0.81035071",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -38,7 +39,18 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5a30d7f3-b8d2-4345-9103-b315bc9d5c35",
+        "fileName": "TestSFLogin.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ebe903b6-d244-42fc-a92b-9f4f077af92c",
+        "fileName": "Test-Login.xaml"
+      }
+    ],
     "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",

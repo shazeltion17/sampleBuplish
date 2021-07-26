@@ -2,8 +2,9 @@
   <x:Members>
     <x:Property Name="out_Amount" Type="OutArgument(x:String)" />
     <x:Property Name="out_Name" Type="OutArgument(x:String)" />
+    <x:Property Name="out_status" Type="OutArgument(x:Boolean)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>911.333333333333,1033.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>864,1135.33333333333</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -38,7 +39,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -69,9 +70,12 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Salesforce" sap:VirtualizedContainerService.HintSize="476,868.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence DisplayName="Salesforce" sap:VirtualizedContainerService.HintSize="476,970.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="userpw" />
       <Variable x:TypeArguments="x:String" Name="username" />
@@ -85,13 +89,13 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="SalesforceKey" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="434,80.6666666666667" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[keypw]" Username="[keyusername]" />
     <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="salesforenUser" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="434,80.6666666666667" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[userpw]" Username="[username]" />
-    <usa:SalesforceApplicationScope CustomServer="{x:Null}" ExistingConnectionService="{x:Null}" Port="{x:Null}" ProxyPassword="{x:Null}" ProxyServer="{x:Null}" ProxyUser="{x:Null}" SalesforceConnection="{x:Null}" SecurityToken="{x:Null}" ConsumerKey="[keyusername]" ConsumerSecret="[keypw]" DisplayName="Salesforce Application Scope" sap:VirtualizedContainerService.HintSize="434,535.333333333333" sap2010:WorkflowViewState.IdRef="SalesforceApplicationScope_1" Password="[userpw]" ReportApiErrorAsException="False" ServerType="Live" TelemetryEnabled="True" UseStrongDataTyping="False" Username="[username]">
+    <usa:SalesforceApplicationScope CustomServer="{x:Null}" ExistingConnectionService="{x:Null}" Port="{x:Null}" ProxyPassword="{x:Null}" ProxyServer="{x:Null}" ProxyUser="{x:Null}" SalesforceConnection="{x:Null}" SecurityToken="{x:Null}" ConsumerKey="[keyusername]" ConsumerSecret="[keypw]" DisplayName="Salesforce Application Scope" sap:VirtualizedContainerService.HintSize="434,637.333333333333" sap2010:WorkflowViewState.IdRef="SalesforceApplicationScope_1" Password="[userpw]" ReportApiErrorAsException="False" ServerType="Live" TelemetryEnabled="True" UseStrongDataTyping="False" Username="[username]">
       <usa:SalesforceApplicationScope.Body>
         <ActivityAction x:TypeArguments="usc:IConnectionService">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="usc:IConnectionService" Name="SalesforceConnection" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,424" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,526" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataRow" Name="sf_drow" />
               <Variable x:TypeArguments="usam:SalesforceStatus" Name="status" />
@@ -389,6 +393,14 @@
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[Amount + Name]" />
+            <Assign sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">[status.Success]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">[out_status]</InArgument>
+              </Assign.Value>
+            </Assign>
           </Sequence>
         </ActivityAction>
       </usa:SalesforceApplicationScope.Body>
