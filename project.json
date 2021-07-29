@@ -5,7 +5,10 @@
   "dependencies": {
     "SlackAPI": "1.1.12",
     "UiPath.Excel.Activities": "[2.10.4]",
+    "UiPath.FormActivityLibrary": "[1.3.0]",
+    "UiPath.FormActivityLibrary.Contracts": "[1.3.0]",
     "UiPath.Mail.Activities": "[1.10.5]",
+    "UiPath.Persistence.Activities": "[1.2.2]",
     "UiPath.Salesforce.Activities": "1.7.0",
     "UiPath.System.Activities": "[21.4.1]",
     "UiPath.Testing.Activities": "[1.3.3]",
