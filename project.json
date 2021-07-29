@@ -52,6 +52,11 @@
         "editingStatus": "Publishable",
         "testCaseId": "ebe903b6-d244-42fc-a92b-9f4f077af92c",
         "fileName": "Test-Login.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2aac9911-7436-474e-a732-ba11a904599c",
+        "fileName": "TestCase.xaml"
       }
     ],
     "modernBehavior": true
