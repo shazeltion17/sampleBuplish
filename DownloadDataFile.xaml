@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>939.333333333333,1470</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1376,1470</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="70">
@@ -48,10 +48,15 @@
       <x:String>UiPath.Persistence.Activities.FormTask</x:String>
       <x:String>UiPath.Persistence.Activities.BaseTask</x:String>
       <x:String>UiPath.Persistence.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="66">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -84,6 +89,13 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap:VirtualizedContainerService.HintSize="949.333333333333,1305.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_11">
@@ -111,9 +123,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
-        <x:Reference>__ReferenceID9</x:Reference>
+        <x:Reference>__ReferenceID8</x:Reference>
       </Flowchart.StartNode>
-      <FlowStep x:Name="__ReferenceID6">
+      <FlowStep x:Name="__ReferenceID5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">60,323.666666666667</av:Point>
@@ -198,7 +210,7 @@
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <av:Point x:Key="ShapeLocation">60,543.666666666667</av:Point>
                     <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">160,596.333333333333 160,626.333333333333 600,626.333333333333 600,663.666666666667</av:PointCollection>
+                    <av:PointCollection x:Key="ConnectorLocation">160,596.333333333334 160,626.333333333334 560,626.333333333334 560,636.04</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke LoginToAcme workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="LoginToAcme.xaml">
@@ -212,21 +224,31 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:InvokeWorkflowFile>
                 <FlowStep.Next>
-                  <FlowStep x:Name="__ReferenceID3">
+                  <FlowStep x:Name="__ReferenceID7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <av:Point x:Key="ShapeLocation">500,663.666666666667</av:Point>
-                        <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
-                        <av:PointCollection x:Key="ConnectorLocation">600,716.333333333333 600,746.333333333333 160,746.333333333333 160,783.666666666667</av:PointCollection>
+                        <av:Point x:Key="ShapeLocation">460,636.04</av:Point>
+                        <av:Size x:Key="ShapeSize">200,69.3333333333333</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">560,705.373333333333 560,735.373333333333 160,735.373333333333 160,783.666666666667</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;The Robot will begin entering the data&quot;]" TopMost="True">
+                    <Sequence sap:VirtualizedContainerService.HintSize="376,360" sap2010:WorkflowViewState.IdRef="Sequence_12">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                    </ui:MessageBox>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke LogintoSAP workflow" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="LogintoSAP.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke EnterAccountInformation workflow" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="EnterAccountInformation.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                    </Sequence>
                     <FlowStep.Next>
                       <FlowStep x:Name="__ReferenceID2">
                         <sap:WorkflowViewStateService.ViewState>
@@ -307,12 +329,12 @@
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:ForEachRow>
                         <FlowStep.Next>
-                          <FlowStep x:Name="__ReferenceID4">
+                          <FlowStep x:Name="__ReferenceID3">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <av:Point x:Key="ShapeLocation">470,863.666666666667</av:Point>
                                 <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
-                                <av:PointCollection x:Key="ConnectorLocation">570,916.333333333334 570,960 400,960</av:PointCollection>
+                                <av:PointCollection x:Key="ConnectorLocation">570,916.333333333334 570,946.333333333334 140,946.333333333334 140,1103.66666666667</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Salesforce_get_opp_data workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Salesforce_get_opp_data.xaml">
@@ -322,17 +344,17 @@
                               </ui:InvokeWorkflowFile.Arguments>
                             </ui:InvokeWorkflowFile>
                             <FlowStep.Next>
-                              <FlowStep x:Name="__ReferenceID8">
+                              <FlowStep x:Name="__ReferenceID4">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <av:Point x:Key="ShapeLocation">200,933.666666666667</av:Point>
+                                    <av:Point x:Key="ShapeLocation">40,1103.66666666667</av:Point>
                                     <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
-                                    <av:PointCollection x:Key="ConnectorLocation">200,960 140,960 140,1103.66666666667</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Multiple-level-Approval workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="multiple_level_approval\Multiple-level-Approval.xaml">
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendingEmailTemplate workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="SendingEmailTemplate.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_Amount">[var_Amount]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_Name">[var_Name]</InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -340,27 +362,6 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:InvokeWorkflowFile>
-                                <FlowStep.Next>
-                                  <FlowStep x:Name="__ReferenceID5">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <av:Point x:Key="ShapeLocation">40,1103.66666666667</av:Point>
-                                        <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke SendingEmailTemplate workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="SendingEmailTemplate.xaml">
-                                      <ui:InvokeWorkflowFile.Arguments>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_Amount">[var_Amount]</InArgument>
-                                        <InArgument x:TypeArguments="x:String" x:Key="in_Name">[var_Name]</InArgument>
-                                      </ui:InvokeWorkflowFile.Arguments>
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                    </ui:InvokeWorkflowFile>
-                                  </FlowStep>
-                                </FlowStep.Next>
                               </FlowStep>
                             </FlowStep.Next>
                           </FlowStep>
@@ -379,8 +380,7 @@
       <x:Reference>__ReferenceID2</x:Reference>
       <x:Reference>__ReferenceID3</x:Reference>
       <x:Reference>__ReferenceID4</x:Reference>
-      <x:Reference>__ReferenceID5</x:Reference>
-      <FlowStep x:Name="__ReferenceID7">
+      <FlowStep x:Name="__ReferenceID6">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">530,183.666666666667</av:Point>
@@ -399,10 +399,10 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:InvokeWorkflowFile>
         <FlowStep.Next>
-          <x:Reference>__ReferenceID6</x:Reference>
+          <x:Reference>__ReferenceID5</x:Reference>
         </FlowStep.Next>
       </FlowStep>
-      <FlowStep x:Name="__ReferenceID9">
+      <FlowStep x:Name="__ReferenceID8">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">380,73.6666666666667</av:Point>
@@ -418,10 +418,10 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:ReportStatus>
         <FlowStep.Next>
-          <x:Reference>__ReferenceID7</x:Reference>
+          <x:Reference>__ReferenceID6</x:Reference>
         </FlowStep.Next>
       </FlowStep>
-      <x:Reference>__ReferenceID8</x:Reference>
+      <x:Reference>__ReferenceID7</x:Reference>
     </Flowchart>
   </Sequence>
 </Activity>

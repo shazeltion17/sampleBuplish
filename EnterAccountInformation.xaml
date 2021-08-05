@@ -1,0 +1,224 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="EnterAccountInformation" sap:VirtualizedContainerService.HintSize="1376,810.666666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Persistence.Activities.Model.Task</x:String>
+      <x:String>UiPath.Persistence.Activities.FormTask</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Salesforce</AssemblyReference>
+      <AssemblyReference>UiPath.Salesforce.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Salesforce.Activities.Wizards</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Enter Account Information" sap:VirtualizedContainerService.HintSize="516,646" sap2010:WorkflowViewState.IdRef="Sequence_16">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="474,554" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: SAP Easy Access" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" Version="V1">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,3353.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'OkCodeField okcd'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Text="FB70">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="39, 144, 234, 36" ElementType="InputBox" FriendlyName="'OkCodeField okcd'" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" FuzzySelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAO4AAAAoCAYAAAD5X8aLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAESSURBVHhe7dWxacNAGIbhlB7KY2SJ1JkipdtUmcDgEdJmBVXZIBtc/AfJkGATn0BCHzwPfMUdXPlyDw2II1wIdAn35fBqZhvf5Fe4wHYJFwIJFwIJFwIJFwIJFwIJFwIJFwIJFwIJFwIJFwIJFwIJFwIJFwIJFxYwHE9tf/gcT32Gj/eft8N4vka4sIRzfLvHt7brjLeirXf749d4c51wYSn1c3bEe2+0RbiwpDvj7Ym2CBeW9k+8vdEW4cIabsQ7J9oiXFjLn3jnRluEC2ua4n0+zY62CBfWVvGew32aGW0RLgQSLgQSLgQSLgQSLgQSLgQSLgQSLgQSLgQSLgQSLgS6Ga6ZbXuTS7hADuFCnNa+AdPtR2lHzCNmAAAAAElFTkSuQmCC" InformativeScreenshot="40084265884e10b1136eabf5e003ea2f.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access' /&gt;" SearchSteps="Selector" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,155.333333333333" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" />
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Account'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Text="10100002">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="283, 421, 299, 39" ElementType="InputBox" FriendlyName="'CTextField Account'" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/ctxtINVFO-ACCNT' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/ctxtINVFO-ACCNT' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS8AAAArCAYAAAApOA56AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMuSURBVHhe7d1LS1RhAMbxzq6VC6kv0BfoE7QQctF2CBKsTVDQKly0CEyIFrNwIxHUokDEgWojSDgFSlgGItgNhUgMIVDoBtJ6eOs5nHc4c5w5t3feMwj/HzzgOOO4+3Muk51otVqGMcZcFgRBuG7P+RrxYow5b6DxOnlxljHGcm9166D9tY1X/HmXnbrcMCOTS+bq/Tfm/e6vI+HSOuIFAHnYXtx79iGcjZd97LpbsxtmdKpphsbmzPD4vJlZ3CZeANwle2Hj1W87+4emVl8Of18yYMQLQGFVxcuq1VfCI7D4KSTxAlBY1fHSEZhOISeerBMvAOUNohe6BqaL+MQLQGmD6IUu4usuJPECUNogeqG7kPq9xAtAacQLwLFEvAAcS8QLwLFUpBcX7r4KX5931x6sRT/ZiXgBcFakF3rto5dfokfp7jQ2zekrjehRJ+IFwFnReD19uxs9SqfX9Xpv4gXAWZFeKEh7P/5Gj9IRLwBe+eoF8QLgVd5ebHz9GV6AP3P9efgz2rnbL8z0wufoFZ2IFwCv8vRCgdLF90vTr01z83v4PZ0+6vuKmSKWPJ0kXgC8yuqF7i7qNb2OsBStszcXwsURLwBepfVCYbJHXGns6/TxCIt4AfAqrRc62tLzut6VRYGLH30RLwBepfVi4vF67p4kX0u8AHiV1guXeOlaGZ+wB+BNWi/KnDbaiGm9rpURLwDO0nqR94K94qb36XVHMol4AXCW1Yu8H5UgXgAqlacXilLah1T1HppOGbUsxAuAs7y96PbPg/T3vXRXURHTZ7zsEVjWaSbxAuCsX73QEZmOzvR+WQEjXgCc9bMXeQNGvAA463cv4gHTaaSujSURLwDOfPRCAev2lyYs4gXA2SB6wf+YDcDZIHoxOtU05/+PeAEoLdmLIAjC+bKzf2iGxubMjYfviBeA8qqOV62+bIbH582nvT/EC0B5VcVLR1y1+kr4+2YWt9vhIl4ASrG90B1AzcbLPnadLs7rGpdOFXXElQyX1hEvxhjLu9Wtg/bXNl7x512mu4ojk0vhNa6P334fCZfWjhdjjJWdjVe353yNeDHGnFd9vFrmH83dzqZ3TX24AAAAAElFTkSuQmCC" InformativeScreenshot="90a18eb031764113e6d7c1a769cf1e26.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter Customer Invoice: Company Code 1710' /&gt;" SearchSteps="Selector" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Invoice'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_5" Text="[today.ToShortDateString]">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="283, 469, 164, 39" ElementType="InputBox" FriendlyName="'CTextField Invoice'" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/ctxtINVFO-BLDAT' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/ctxtINVFO-BLDAT' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKgAAAArCAYAAADsb8PCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACbSURBVHhe7dKhDYBAEABB2kdi6fXyuDeAXzGTbAd7zMySqhlU6fag53VLmT4HhQKDkmZQ0gxKmkFJMyhpBiXNoKQZlDSDkmZQ0gxKmkFJMyhpBiXNoKQZlDSDkmZQ0gxKmkFJMyhpBiXNoKQZlDSDkmZQ0gxKmkFJMyhpBiXNoKQZlDSDkmZQ0gxKmkFJ+x1UqvQaVCpmUIWb9QAGiV2JOyLzgwAAAABJRU5ErkJggg==" InformativeScreenshot="82fd0426507536404864cf2290bc4d15.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter Customer Invoice: Company Code 1710' /&gt;" SearchSteps="Selector" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TextField Amount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_6" Text="130000">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="283, 661, 464, 39" ElementType="InputBox" FriendlyName="'TextField Amount'" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/txtINVFO-WRBTR' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/txtINVFO-WRBTR' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAdQAAAArCAYAAADBlHkUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADcSURBVHhe7dUxCoNAAABBv29p618PUyUgEsjltpyBfcNuY4xLkiStZaiSJAV9hrofpyRJmuz90NtQAYDfGSoABAwVAAKGCgABQwWAgKECQMBQASBgqAAQMFQACBgqAAQMFQAChgoAAUMFgIChAkDAUAEgYKgAEDBUAAgYKgAEDBUAAoYKAAFDBYCAoQJAwFABIGCoABAwVAAIGCoABAwVAAKGCgABQwWAgKECQMBQASBgqAAQMFQACBgqAAQMFQAChgoAAUMFgMDXoUqSpLkeQ5UkSf9nqJIkLTeuF2LQ3xeoVY82AAAAAElFTkSuQmCC" InformativeScreenshot="81eb179f4e9e4355e5a1f803e2384056.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter Customer Invoice: Company Code 1710' /&gt;" SearchSteps="Selector" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Document'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_7" Text="USD">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="748, 541, 89, 39" ElementType="InputBox" FriendlyName="'CTextField Document'" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/ctxtINVFO-WAERS' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/ctxtINVFO-WAERS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAArCAYAAAAaCoQfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACTSURBVGhD7dCxCcNAAATBb9+hU7fi2h4JDFImlFi/ySwcXDxjzrnZ2kEPNl7vz+98x7CHBz3YJbr+H/Qg6EHQg6AHQQ+CHgQ9CHoQ9CDoQdCDoAdBD4IeBD0IehD0IOhB0IOgB0EPgh4EPQh6EPQg6EHQg6AHQQ+CHgQ9CHoQ9CDoQbfo9tygBzvRj2PrBn355rYDSS+jZ0r06WIAAAAASUVORK5CYII=" InformativeScreenshot="8771d245467e46ebe5080677565fad28.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter Customer Invoice: Company Code 1710' /&gt;" SearchSteps="Selector" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Special'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_8" Text="D">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="748, 421, 29, 39" ElementType="InputBox" FriendlyName="'CTextField Special'" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/ctxtINVFO-UMSKZ' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/ctxtINVFO-UMSKZ' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAArCAYAAAD2f+EJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABOSURBVFhH7c6hDQAwDMTA7L9SZ4taZFyWPLAl86vuvttnIU7V+NmIiUSQCBJBIkgEiSARJIJEkAgSQSJIBIkgESSCRNAXMXkmYvMARN8H2DTOMjk1kAoAAAAASUVORK5CYII=" InformativeScreenshot="877ecd1adf21c0e98991d3665e53ee50.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter Customer Invoice: Company Code 1710' /&gt;" SearchSteps="Selector" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TextField Reference'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_9" Text="Test">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="748, 469, 254, 39" ElementType="InputBox" FriendlyName="'TextField Reference'" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/txtINVFO-XBLNR' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/txtINVFO-XBLNR' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQIAAAArCAYAAACTm4YaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACYSURBVHhe7dSxDcAwDAQx7b9SZhPs71IYQXqLBG6Fq+5ekmZnBJLeETxVkoZlBJK+RwDczwgAIwCMAAgjAIwAMAIgjAAwAsAIgDACwAgAIwDCCAAjAIwACCMAjAAwAiCMADACwAiAMALACAAjAMIIACMAjAAIIwCMADACIIwAMALACIAwAuB/BJLmZASSzhFImpsRSOPrtQGsz2ZHF5YgWgAAAABJRU5ErkJggg==" InformativeScreenshot="50a1c4b56b1b1970fbb56503c39f4310.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter Customer Invoice: Company Code 1710' /&gt;" SearchSteps="Selector" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TextField Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_10" Text="1001">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="283, 613, 254, 39" ElementType="InputBox" FriendlyName="'TextField Number'" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/txtINVFO-BVORG' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/txtINVFO-BVORG' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQIAAAArCAYAAACTm4YaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACYSURBVHhe7dSxDcAwDAQx7b9SZhPs71IYQXqLBG6Fq+5ekmZnBJLeETxVkoZlBJK+RwDczwgAIwCMAAgjAIwAMAIgjAAwAsAIgDACwAgAIwDCCAAjAIwACCMAjAAwAiCMADACwAiAMALACAAjAMIIACMAjAAIIwCMADACIIwAMALACIAwAuB/BJLmZASSzhFImpsRSOPrtQGsz2ZHF5YgWgAAAABJRU5ErkJggg==" InformativeScreenshot="27c7761bde5e34fca9b70ad28920d32d.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter Customer Invoice: Company Code 1710' /&gt;" SearchSteps="Selector" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TextField Tax'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_11" Text="10000">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="283, 757, 254, 39" ElementType="InputBox" FriendlyName="'TextField Tax'" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/txtINVFO-WMWST' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/txtINVFO-WMWST' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQIAAAArCAYAAACTm4YaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACfSURBVHhe7dTBCYBAFEPB7b8la/usuYgHEe9mBlJC3pqZbWbdEwIzu0NwrGVmZbu+LwRmxXsNAfB/QgAIASAEQAgBIASAEAAhBIAQAEIAhBAAQgAIARBCAAgBIARACAEgBIAQACEEgBAAQgCEEABCAAgBEEIACAEgBEAIASAEgBAAIQSAEABCAIQQAN8hMLOeCYGZPUNgZr0TArP6zT4B7XcPIwOf8bEAAAAASUVORK5CYII=" InformativeScreenshot="016c8925fbdb1283e6599d0272d42859.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter Customer Invoice: Company Code 1710' /&gt;" SearchSteps="Selector" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NSelectItem DisplayName="Select Item 'ComboBox Tax'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="E0 (A/P Sales Tax, exempt)">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="10">
+                      <x:String>E0 (A/P Sales Tax, exempt)</x:String>
+                      <x:String>E1 (A/P Sales Tax, taxable, posted to Cost Account)</x:String>
+                      <x:String>I0 (A/P Sales Tax, exempt)</x:String>
+                      <x:String>I1 (A/P Sales Tax, taxable, distributed to line items)</x:String>
+                      <x:String>O0 (A/R Sales Tax, exempt)</x:String>
+                      <x:String>O1 (A/R Sales Tax, taxable)</x:String>
+                      <x:String>S1 (A/R Sales Tax - Taxable)</x:String>
+                      <x:String>U0 (A/P Use Tax, exempt)</x:String>
+                      <x:String>U1 (A/P Use Tax, taxable, self assessed)</x:String>
+                      <x:String xml:space="preserve"> </x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="538, 757, 329, 39" ElementType="DropDown" FriendlyName="'ComboBox Tax'" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/cmbINVFO-MWSKZ' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/cmbINVFO-MWSKZ' /&gt;" InformativeScreenshot="8f61ead9488fc320b3bfc5fa2fd2b956.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter Customer Invoice: Company Code 1710' /&gt;" SearchSteps="Selector" />
+                  </uix:NSelectItem.Target>
+                </uix:NSelectItem>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Item Text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_12" Text="Test">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="283, 805, 689, 39" ElementType="InputBox" FriendlyName="'CTextField Item Text'" FullSelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/ctxtINVFO-SGTXT' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsTS/tabpMAIN/ssubPAGE:SAPLFDCB:0510/ctxtINVFO-SGTXT' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAArUAAAArCAYAAABmU3BbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEESURBVHhe7daxCcAwEMBA779SZnucLk0waSO4A+2gNTNbkiRJKmdqJUmSlO+Z2mstSZIkKZWplSRJUr7j1AIAwN+ZWgAA8kwtAAB5phYAgDxTCwBAnqkFACDP1AIAkGdqAQDIM7UAAOSZWgAA8kwtAAB5phYAgDxTCwBAnqkFACDP1AIAkGdqAQDIM7UAAOSZWgAA8kwtAAB5phYAgDxTCwBAnqkFACDP1AIAkGdqAQDIM7UAAOSZWgAA8kwtAAB5phYAgDxTCwBAnqkFACDP1AIAkGdqAQDIM7UAAOSZWgAA8kwtAAB5n1MrSZIkVTK1kiRJyveaWkmSJKmaqZUkSVK82Td2bRTP+MqVeQAAAABJRU5ErkJggg==" InformativeScreenshot="522b1bb63069863b3d217cd2afba1046.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter Customer Invoice: Company Code 1710' /&gt;" SearchSteps="Selector" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,155.333333333333" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][k(enter)][u(hk)]" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH/SURBVGhD7ZY7SyNRFIAja+n+h8UXKq6o+ECygTGFlYXYCJaC4IIBRQtNLLXyuVF0wULcxpjRQrDQwhVt7EUrQciu8YXJEBNQmz2eiye44jWZxTvjjpwPviZFznfu3IRxMQzDMAzDMO8I79BKE9riEL2U/UChL5iDH0ZQcICJxoDuofQHHLSAgfFuyn7EIQsYWkBvoOSnOGCB+Ivxgv98gRjG11GqnPzOcVxAj3gDOtiiPFSmiK+lzKcYqdvhtLHrm5HFrcPE/OY+WO7GPrSPrkOjPywL/tsrza/XUO5zjNQdvIVza3vwpXcBtMFlWXTaSzz5akqVI/tyK42jM6u7UP91Gjz9PzI9ARFfRZkvIxtipcGVHajvCoKnbzFT/AVem0pKzIxsiBWKk58Kb0Nd17ds8Wd48hWUlx3ZMNXGk7cwubxt5uTPtUD4M6WZQzZQpfHkHUyEfpqJFydfTlnmwSGJtHhS16ex1J/oVRJUObZkKj6K8WWU9G+cGTe5woOj37nNrW0fPT3zJ27fHLi7Z5XY4Pue7d8mqvnDpZTzOvIKaj5oA6GINrAEyhwMAb45ysKFJ3jnS2j86ynsnrbzXegXXptiGq0GG1/mRHwRjVWHTQtELIkX2LDAMf4eCmiceixeQMTn0yjrwEEdaI9qMf4TjWAYhmEYhmGU4HLdAwUCoaAm9Q3LAAAAAElFTkSuQmCC" InformativeScreenshot="ec5c6eca3216d810420836be311e8f4b.png" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access'/&gt;" />
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="440,382" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: SAP Easy Access" sap:VirtualizedContainerService.HintSize="434,311.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" Version="V1">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH/SURBVGhD7ZY7SyNRFIAja+n+h8UXKq6o+ECygTGFlYXYCJaC4IIBRQtNLLXyuVF0wULcxpjRQrDQwhVt7EUrQciu8YXJEBNQmz2eiye44jWZxTvjjpwPviZFznfu3IRxMQzDMAzDMO8I79BKE9riEL2U/UChL5iDH0ZQcICJxoDuofQHHLSAgfFuyn7EIQsYWkBvoOSnOGCB+Ivxgv98gRjG11GqnPzOcVxAj3gDOtiiPFSmiK+lzKcYqdvhtLHrm5HFrcPE/OY+WO7GPrSPrkOjPywL/tsrza/XUO5zjNQdvIVza3vwpXcBtMFlWXTaSzz5akqVI/tyK42jM6u7UP91Gjz9PzI9ARFfRZkvIxtipcGVHajvCoKnbzFT/AVem0pKzIxsiBWKk58Kb0Nd17ds8Wd48hWUlx3ZMNXGk7cwubxt5uTPtUD4M6WZQzZQpfHkHUyEfpqJFydfTlnmwSGJtHhS16ex1J/oVRJUObZkKj6K8WWU9G+cGTe5woOj37nNrW0fPT3zJ27fHLi7Z5XY4Pue7d8mqvnDpZTzOvIKaj5oA6GINrAEyhwMAb45ysKFJ3jnS2j86ynsnrbzXegXXptiGq0GG1/mRHwRjVWHTQtELIkX2LDAMf4eCmiceixeQMTn0yjrwEEdaI9qMf4TjWAYhmEYhmGU4HLdAwUCoaAm9Q3LAAAAAElFTkSuQmCC" InformativeScreenshot="ec5c6eca3216d810420836be311e8f4b.png" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access'/&gt;" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GenerateInvoice" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="864,5716" sap2010:WorkflowViewState.IdRef="GenerateInvoice_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GenerateInvoice" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="839.333333333333,5717.33333333333" sap2010:WorkflowViewState.IdRef="GenerateInvoice_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -71,21 +71,21 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="514.666666666667,5551.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="514.666666666667,5552.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="472.666666666667,5459.33333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="472.666666666667,5460.66666666667" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Make Invoices for Free | Invoice Maker" sap:VirtualizedContainerService.HintSize="434,5221.33333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Make Invoices for Free | Invoice Maker" sap:VirtualizedContainerService.HintSize="434,5222.66666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,5003.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,5004.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -109,7 +109,7 @@
                     <uix:TargetAnchorable BrowserURL="https://invoicemaker.com/" DesignTimeRectangle="938, 437, 44, 40" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg' idx='2' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg' type='' tag='svg' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAoCAYAAACFFRgXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAHrSURBVFhH7ZhLS8NAFIX9/7iyG+3GB6JWKHbRIlhQK1gqRHwgdiHdFBfqQii4qKuRM2TCzXTGmWlyJ4144NAmuZl8uZn3mqiZ6g38MpmKVrsvmjsnYn1jf8G4hpgqlQEDxARp8tPzJL0rvjLgo/aZEc7mqqAzYArT6V6K69HDghubrVzcaX8ohjePpfu3ZBiBp69v6dm8QqpNUdugg4AhFKRnmsOlAUPvH5/ifJDIes9hlD2ff6dPy2sp4Cr1N4HxeW7vx3LgiOmLq0RWPyovYNxMr8d0Y+s4B+0Exn96rQqjISoFA+Nm06BStpvb+fmMUjBwLOmDlNLKAtueWxowGkanO5BTU/zqrTtU7MB6T4LjImIHpjGuWB+xA+utGsdFxA6MODWLwy8tYxmxA5etf+BlNZt9yWWQq9tzAtNVBBcwZn1qCwGTGtskHXICJ3djCY0FKFUoMDKHPhhZ1KX31XimTU5gm0KAkTFkTsXuHfayLGLZQ8uBkW2bogBj2U9jYbwAJuL6eWXbThI7sB7na9sQzg6Mz0/jQoyeQxcrMB5YZK/CVC3YM1y2agfsXHHYpAOjxdONOy7rbULJCYyBgN5YhXcPeimNBzCE0c9UUCzTRukFDGHpjTc1FchlbCmgSlJ5A6+KagYsxA/MPV1YdHMvagAAAABJRU5ErkJggg==" InformativeScreenshot="56f83d1bf76f818a7dacd3805648bfc8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Make Invoices for Free | Invoice Maker' /&gt;" SearchSteps="FuzzySelector, Image" />
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="C:\Users\Ehrlich Presention\Desktop\Demo Things\SalesOrder\logo.JPG">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,230" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[IO.Directory.GetCurrentDirectory+&quot;\logo.JPG&quot;]">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable DesignTimeRectangle="201, 535, 642, 15" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAoYAAAATCAYAAAANvsygAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABnSURBVHhe7dYBDQAwEMSg+Td9+1QHqOANAACOGAIAEDEEACBiCABAxBAAgIghAAARQwAAIoYAAEQMAQCIGAIAEDEEACBiCABAxBAAgIghAAARQwAAIoYAAEQMAQCIGAIAEDEEAOBsH6XmE2r7mbX0AAAAAElFTkSuQmCC" InformativeScreenshot="5413396150e908db97572d80fdb0c9f1.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
                       <uix:TargetAnchorable.Anchors>
